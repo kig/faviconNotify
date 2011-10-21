@@ -12,7 +12,7 @@
       var notify = document.querySelector('#notify');
       var clear = document.querySelector('#clear');
       var n = 0;
-      notify.onclick = function(){ FaviconNotify.set(n++); };
+      notify.onclick = function(){ FaviconNotify.set(++n); };
       clear.onclick = function(){ FaviconNotify.clear(); n=0; };
     </script>
 
