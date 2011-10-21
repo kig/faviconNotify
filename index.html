@@ -1,0 +1,21 @@
+<html>
+
+  <head>
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="faviconNotify.js"></script>
+  </head>
+
+  <body>
+    <button id="notify">Notify!</button> <button id="clear">Clear notifications</button>
+    <script>
+      var notify = document.querySelector('#notify');
+      var clear = document.querySelector('#clear');
+      var n = 0;
+      notify.onclick = function(){ FaviconNotify.set(n++); };
+      clear.onclick = function(){ FaviconNotify.clear(); n=0; };
+    </script>
+
+  </body>
+
+</html>
