@@ -76,8 +76,8 @@ FaviconNotify = {
       this.ctx.fillStyle = 'red';
       this.ctx.beginPath();
       this.ctx.arc(12,4,4, -Math.PI/2, Math.PI/2,false);
-      this.ctx.arc(16-w-4+4,4,4, Math.PI/2, Math.PI*1.5,false);
-      this.ctx.rect(16-w-4+4,0,w+4-8,8);
+      this.ctx.arc(16-w-5+4,4,4, Math.PI/2, Math.PI*1.5,false);
+      this.ctx.rect(16-w-5+4,0,w+5-8,8);
       this.ctx.fill();
       this.ctx.fillStyle = 'white';
       this.ctx.fillText(n.toString(), 16-w-2, 7);
