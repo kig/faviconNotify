@@ -71,12 +71,16 @@ FaviconNotify = {
     this.init(function() {
       this.ctx.clearRect(0,0,16,16);
       this.ctx.drawImage(this.originalIcon, 0, 0);
-      this.ctx.font = '9px Monospace';
+      this.ctx.font = '9px monospace';
       var w = this.ctx.measureText(n.toString()).width;
       this.ctx.fillStyle = 'red';
-      this.ctx.fillRect(16-w-3,0,w+3,8);
+      this.ctx.beginPath();
+      this.ctx.arc(12,4,4, -Math.PI/2, Math.PI/2,false);
+      this.ctx.arc(16-w-4+4,4,4, Math.PI/2, Math.PI*1.5,false);
+      this.ctx.rect(16-w-4+4,0,w+4-8,8);
+      this.ctx.fill();
       this.ctx.fillStyle = 'white';
-      this.ctx.fillText(n.toString(), 16-w-1, 7);
+      this.ctx.fillText(n.toString(), 16-w-2, 7);
       this.updateIcon();
     });
   },
