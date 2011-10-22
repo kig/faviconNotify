@@ -1,0 +1,14 @@
+  <html>
+    <head>
+      <link rel="icon" href="favicon.ico">
+      <script src="faviconNotify.js"></script>
+      <script>
+        window.onblur = function() {
+          FaviconNotify.set(1);
+        };
+        window.onfocus = function() {
+          FaviconNotify.clear();
+        };
+      </script>
+    </head>
+  </html>

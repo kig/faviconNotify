@@ -1,0 +1,30 @@
+faviconNotify
+-------------
+
+A small library to display a red notification bubble in your favicon.
+Done in JavaScript and Canvas, so should work in a drop-in fashion.
+Works at least on Chrome and Firefox.
+
+
+Usage:
+
+  FaviconNotify.set(string);
+  FaviconNotify.clear();
+
+
+Example:
+
+  <html>
+    <head>
+      <link rel="icon" href="favicon.ico">
+      <script src="faviconNotify.js"></script>
+      <script>
+        window.onblur = function() {
+          FaviconNotify.set(1);
+        };
+        window.onfocus = function() {
+          FaviconNotify.clear();
+        };
+      </script>
+    </head>
+  </html>
