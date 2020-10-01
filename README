@@ -1,9 +1,9 @@
 faviconNotify
 -------------
 
-A small library to display a red notification bubble in your favicon.
+A small library to display a red notification bubble in your favourate icon.
 Done in JavaScript and Canvas, so should work in a drop-in fashion.
-Works at least on Chrome and Firefox.
+Works atleast on Chrome and Firefox.
 
 
 Usage:
